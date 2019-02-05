@@ -47,7 +47,9 @@ Adversaries may use fallback or alternate communication channels if the primary 
 ---
 
 ## HUNTER NOTES
-* Analyze network data for uncommon data flows (e.g., a client sending significantly more data than it receives from a server). Processes utilizing the network that do not normally have network communication or have never been seen before are suspicious. Analyze packet contents to detect communications that do not follow the expected protocol behavior for the port that is being used. 
+* Analyze network data for unusual amounts of data to/from endpoints.
+* Processes making network connections that do not normally have network communication or have never been seen before. 
+* Analyze packet contents to detect communications that do not follow the expected protocol behavior for the port that is     being used. 
 ---
 
 ## RECOMMENDED HUNTING TECHNIQUES
