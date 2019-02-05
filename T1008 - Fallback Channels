@@ -1,0 +1,66 @@
+# Fallback Channels
+
+<BR>
+
+## DESCRIPTION
+Adversaries may use fallback or alternate communication channels if the primary channel is compromised or inaccessible in order to maintain reliable command and control and to avoid data transfer thresholds.
+## ASSOCIATED MITRE ATT&CK TACTIC(S)
+- [TA0011 - Command and Control](https://attack.mitre.org/tactics/TA0011/)
+
+## ASSOCIATED MITRE ATT&CK TECHNIQUE(S)
+- [T1008 - Fallback Channels](https://attack.mitre.org/techniques/T1008/)
+
+---
+
+## RECOMMENDED DATA SOURCES
+
+| ATT&CK Data Source | Event Log |
+|:---:|:---:|
+|File Monitoring, Process Monitoring, etc..| Sysmon, WinEvent, PowerShell, etc..|
+|File Monitoring, Process Monitoring, etc..| Sysmon, WinEvent, PowerShell, etc..| 
+|File Monitoring, Process Monitoring, etc..| Sysmon, WinEvent, PowerShell, etc..|
+|File Monitoring, Process Monitoring, etc..| Sysmon, WinEvent, PowerShell, etc..| 
+|File Monitoring, Process Monitoring, etc..| Sysmon, WinEvent, PowerShell, etc..| 
+|File Monitoring, Process Monitoring, etc..| Sysmon, WinEvent, PowerShell, etc..|
+
+---
+
+## SPECIFIC EVENTS
+
+| Source | EventID | EventField | Details | Reference | 
+|:---:|:---:|:---:|:---:|:---:|
+| Sysmon, WinEvent, PowerShell | ID | Field, ALL | Short Description or Strings | \[Author Name\](link) |
+| Sysmon, WinEvent, PowerShell | ID | Field, ALL | Short Description or Strings | \[Author Name\](link) |
+| Sysmon, WinEvent, PowerShell | ID | Field, ALL | Short Description or Strings | \[Author Name\](link) |
+| Sysmon, WinEvent, PowerShell | ID | Field, ALL | Short Description or Strings | \[Author Name\](link) |
+| Sysmon, WinEvent, PowerShell | ID | Field, ALL | Short Description or Strings | \[Author Name\](link) |
+| Sysmon, WinEvent, PowerShell | ID | Field, ALL | Short Description or Strings | \[Author Name\](link) |
+| Sysmon, WinEvent, PowerShell | ID | Field, ALL | Short Description or Strings | \[Author Name\](link) |
+| Sysmon, WinEvent, PowerShell | ID | Field, ALL | Short Description or Strings | \[Author Name\](link) |
+
+---
+
+## DATA ANALYTICS
+
+| Analytic Type | Analytic Logic | Analytic Data Object |
+|:---:|---|:---:|
+| Behavioral Analytics, Situational Awareness, Anomaly/Outlier |  process_name = xxx AND process_command_line=xxx WHERE xxxxx  | Data Objects... |
+
+---
+
+## HUNTER NOTES
+* Notes..
+
+---
+
+## RECOMMENDED HUNTING TECHNIQUES
+
+- [ ] Grouping
+- [ ] Searching
+- [ ] Clustering
+- [ ] Stack Counting
+- [ ] Scatter Plots
+- [ ] Box Plots
+- [ ] Isolation Forests
+
+---
