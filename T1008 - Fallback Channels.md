@@ -14,12 +14,12 @@ Adversaries may use fallback or alternate communication channels if the primary 
 
 ## RECOMMENDED DATA SOURCES
 
-| ATT&CK Data Source |
-|:---:|
-| Packet Capture |
-| Netflow/Enclave Netflow |
-| Process Monitoring |
-| Process Use of Network | 
+| ATT&CK Data Source | Event Log |
+|:---:|:---:|
+| Packet Capture | Packet capture / network traffic analyzer (wireshark/tcpdump)|
+| Netflow/Enclave Netflow | Netflow capture software/appliance|
+| Process Monitoring | Sysmon |
+| Process Use of Network | Sysmon |
 
 ---
 
