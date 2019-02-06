@@ -51,7 +51,7 @@ HTTP header host field after decrypting the traffic.
 ## RECOMMENDED HUNTING TECHNIQUES
 
 - [ ] Grouping
-- [x] Searching
+- [ ] Searching
 - [ ] Clustering
 - [ ] Stack Counting
 - [ ] Scatter Plots
