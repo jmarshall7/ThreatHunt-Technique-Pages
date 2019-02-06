@@ -48,11 +48,11 @@ Adversaries may use fallback or alternate communication channels if the primary 
 ## RECOMMENDED HUNTING TECHNIQUES
 
 - [ ] Grouping
-- [ ] Searching
+- [X] Searching
 - [ ] Clustering
-- [ ] Stack Counting
+- [X] Stack Counting
 - [ ] Scatter Plots
 - [ ] Box Plots
-- [ ] Isolation Forests
+- [X] Isolation Forests
 
 ---
