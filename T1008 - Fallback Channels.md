@@ -27,14 +27,7 @@ Adversaries may use fallback or alternate communication channels if the primary 
 
 | Source | EventID | EventField | Details | Reference | 
 |:---:|:---:|:---:|:---:|:---:|
-| Sysmon, WinEvent, PowerShell | ID | Field, ALL | Short Description or Strings | \[Author Name\](link) |
-| Sysmon, WinEvent, PowerShell | ID | Field, ALL | Short Description or Strings | \[Author Name\](link) |
-| Sysmon, WinEvent, PowerShell | ID | Field, ALL | Short Description or Strings | \[Author Name\](link) |
-| Sysmon, WinEvent, PowerShell | ID | Field, ALL | Short Description or Strings | \[Author Name\](link) |
-| Sysmon, WinEvent, PowerShell | ID | Field, ALL | Short Description or Strings | \[Author Name\](link) |
-| Sysmon, WinEvent, PowerShell | ID | Field, ALL | Short Description or Strings | \[Author Name\](link) |
-| Sysmon, WinEvent, PowerShell | ID | Field, ALL | Short Description or Strings | \[Author Name\](link) |
-| Sysmon, WinEvent, PowerShell | ID | Field, ALL | Short Description or Strings | \[Author Name\](link) |
+| N/A | N/A | N/A | N/A | N/A |
 
 ---
 
@@ -42,7 +35,7 @@ Adversaries may use fallback or alternate communication channels if the primary 
 
 | Analytic Type | Analytic Logic | Analytic Data Object |
 |:---:|---|:---:|
-| Behavioral Analytics, Situational Awareness, Anomaly/Outlier |  process_name = xxx AND process_command_line=xxx WHERE xxxxx  | Data Objects... |
+| Anomaly/Outlier | process_name = xxx AND netconn_count:[1 TO *] | Process Execution |
 
 ---
 
