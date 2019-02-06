@@ -15,7 +15,7 @@ Adversaries may use fallback or alternate communication channels if the primary 
 ## RECOMMENDED DATA SOURCES
 
 | ATT&CK Data Source |
-|:---:|:---:|
+|:---:|
 | Packet capture |
 | Netflow/Enclave Netflow |
 | Process Monitoring |
@@ -57,9 +57,9 @@ Adversaries may use fallback or alternate communication channels if the primary 
 - [ ] Grouping
 - [ ] Searching
 - [ ] Clustering
-- [x] Stack Counting
+- [ ] Stack Counting
 - [ ] Scatter Plots
 - [ ] Box Plots
-- [X] Isolation Forests
+- [ ] Isolation Forests
 
 ---
