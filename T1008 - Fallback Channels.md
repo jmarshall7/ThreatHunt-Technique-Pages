@@ -16,7 +16,7 @@ Adversaries may use fallback or alternate communication channels if the primary 
 
 | ATT&CK Data Source |
 |:---:|
-| Packet capture |
+| Packet Capture |
 | Netflow/Enclave Netflow |
 | Process Monitoring |
 | Process Use of Network | 
