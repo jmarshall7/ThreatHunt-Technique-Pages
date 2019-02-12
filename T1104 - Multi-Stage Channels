@@ -50,18 +50,18 @@ Adversaries may create multiple stages for command and control that are employed
 ---
 
 ## HUNTER NOTES
-* Notes..
+* Host data that can relate unknown or suspicious process activity using a network connection is important to supplement any existing indicators of compromise based on malware command and control signatures and infrastructure. Relating subsequent actions that may result from Discovery of the system and network information or Lateral Movement to the originating process may also yield useful data.
 
 ---
 
 ## RECOMMENDED HUNTING TECHNIQUES
 
-- [ ] Grouping
-- [ ] Searching
+- [X] Grouping
+- [X] Searching
 - [ ] Clustering
-- [ ] Stack Counting
+- [X] Stack Counting
 - [ ] Scatter Plots
 - [ ] Box Plots
-- [ ] Isolation Forests
+- [X] Isolation Forests
 
 ---
