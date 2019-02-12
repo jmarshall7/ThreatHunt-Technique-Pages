@@ -1,15 +1,15 @@
-# HUNT TITLE
+# Multi-Stage Channels
 
 <BR>
 
 ## DESCRIPTION
-Lorem ipsum dolor sit amet, utinam gubergren ex eum, paulo dolor volumus eum eu. An ubique latine aperiri cum. Ex modo accusata contentiones sea, eos eu liber solet, ad imperdiet inciderint ius. Nam an munere putant docendi, vim option eligendi singulis ex, eu discere civibus mediocrem usu. Pro ubique iracundia no, no bonorum civibus constituam duo.
+Adversaries may create multiple stages for command and control that are employed under different conditions or for certain functions. Use of multiple stages may obfuscate the command and control channel to make detection more difficult.
 
 ## ASSOCIATED MITRE ATT&CK TACTIC(S)
-- [TAXXXX - NAME](https://attack.mitre.org/tactics/TAXXXX/)
+- [TA0011 - Command And Control](https://attack.mitre.org/tactics/TA0011/)
 
 ## ASSOCIATED MITRE ATT&CK TECHNIQUE(S)
-- [TXXXX - NAME](https://attack.mitre.org/techniques/TXXXX/)
+- [T1104 - Multi-Stage Channels](https://attack.mitre.org/techniques/T1104/)
 
 ---
 
