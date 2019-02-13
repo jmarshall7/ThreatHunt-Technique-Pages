@@ -17,7 +17,10 @@ Adversaries may create multiple stages for command and control that are employed
 
 | ATT&CK Data Source | Event Log |
 |:---:|:---:|
-|File Monitoring, Process Monitoring, etc..| Sysmon, WinEvent, PowerShell, etc..|
+| Packet Capture | Packet capture / network traffic analyzer (wireshark/tcpdump)|
+| Netflow/Enclave Netflow | Netflow capture software/appliance|
+| Process Monitoring | Sysmon |
+| Process Use of Network | Sysmon |
 
 ---
 
@@ -25,10 +28,7 @@ Adversaries may create multiple stages for command and control that are employed
 
 | Source | EventID | EventField | Details | Reference | 
 |:---:|:---:|:---:|:---:|:---:|
-| Packet Capture | Packet capture / network traffic analyzer (wireshark/tcpdump)|
-| Netflow/Enclave Netflow | Netflow capture software/appliance|
-| Process Monitoring | Sysmon |
-| Process Use of Network | Sysmon |
+| N/A | N/A | N/A | N/A | N/A |
 
 ---
 
