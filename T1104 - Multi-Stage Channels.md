@@ -18,11 +18,6 @@ Adversaries may create multiple stages for command and control that are employed
 | ATT&CK Data Source | Event Log |
 |:---:|:---:|
 |File Monitoring, Process Monitoring, etc..| Sysmon, WinEvent, PowerShell, etc..|
-|File Monitoring, Process Monitoring, etc..| Sysmon, WinEvent, PowerShell, etc..| 
-|File Monitoring, Process Monitoring, etc..| Sysmon, WinEvent, PowerShell, etc..|
-|File Monitoring, Process Monitoring, etc..| Sysmon, WinEvent, PowerShell, etc..| 
-|File Monitoring, Process Monitoring, etc..| Sysmon, WinEvent, PowerShell, etc..| 
-|File Monitoring, Process Monitoring, etc..| Sysmon, WinEvent, PowerShell, etc..|
 
 ---
 
@@ -30,14 +25,10 @@ Adversaries may create multiple stages for command and control that are employed
 
 | Source | EventID | EventField | Details | Reference | 
 |:---:|:---:|:---:|:---:|:---:|
-| Sysmon, WinEvent, PowerShell | ID | Field, ALL | Short Description or Strings | \[Author Name\](link) |
-| Sysmon, WinEvent, PowerShell | ID | Field, ALL | Short Description or Strings | \[Author Name\](link) |
-| Sysmon, WinEvent, PowerShell | ID | Field, ALL | Short Description or Strings | \[Author Name\](link) |
-| Sysmon, WinEvent, PowerShell | ID | Field, ALL | Short Description or Strings | \[Author Name\](link) |
-| Sysmon, WinEvent, PowerShell | ID | Field, ALL | Short Description or Strings | \[Author Name\](link) |
-| Sysmon, WinEvent, PowerShell | ID | Field, ALL | Short Description or Strings | \[Author Name\](link) |
-| Sysmon, WinEvent, PowerShell | ID | Field, ALL | Short Description or Strings | \[Author Name\](link) |
-| Sysmon, WinEvent, PowerShell | ID | Field, ALL | Short Description or Strings | \[Author Name\](link) |
+| Packet Capture | Packet capture / network traffic analyzer (wireshark/tcpdump)|
+| Netflow/Enclave Netflow | Netflow capture software/appliance|
+| Process Monitoring | Sysmon |
+| Process Use of Network | Sysmon |
 
 ---
 
@@ -45,18 +36,19 @@ Adversaries may create multiple stages for command and control that are employed
 
 | Analytic Type | Analytic Logic | Analytic Data Object |
 |:---:|---|:---:|
-| Behavioral Analytics, Situational Awareness, Anomaly/Outlier |  process_name = xxx AND process_command_line=xxx WHERE xxxxx  | Data Objects... |
+| Anomaly/Outlier | process_name = xxx AND netconn_count:[1 TO * ] | Process Execution |
 
 ---
 
 ## HUNTER NOTES
 * Host data that can relate unknown or suspicious process activity using a network connection is important to supplement any existing indicators of compromise based on malware command and control signatures and infrastructure. Relating subsequent actions that may result from Discovery of the system and network information or Lateral Movement to the originating process may also yield useful data.
+* Hunting out Multi-stage C2 channels can be a challenging task especially at the endpoint. We would most-likely at this point in time have to rely on IOC feeds in hopes of identifying re-used C2 infrastructure. Beyond that hunts for process executions with suspicious network connections could possibly uncover this technique. Even with identifying suspicious process network connections it would take more amplifying information to determine that Multi-stage channel technique is being execuited.
 
 ---
 
 ## RECOMMENDED HUNTING TECHNIQUES
 
-- [X] Grouping
+- [ ] Grouping
 - [X] Searching
 - [ ] Clustering
 - [X] Stack Counting
